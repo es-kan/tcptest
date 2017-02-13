@@ -1,0 +1,18 @@
+
+<!DOCTYPE HTML PUBLIC>
+<html lang="en">
+<head>
+  <title>Home</title>
+</head>
+<body>
+  <h1>This is the home template.</h1>
+  {% if user %}
+  <p>Welcome {{ user.username }}!</p>
+  {% else %}
+  <p>Welcome, nameless stranger!</p>
+  {% endif %}
+  <a href="firstapp/index/">Go to application.</a>
+  <hr >
+  <p>Thanks for visiting my site.</p>
+</body>
+</html >
