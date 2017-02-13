@@ -1,10 +1,21 @@
 {% extends "firstapp_base.html" %}
 
-{% block content %}
-<p>Available items:</p>
-<ul>
+{% block itemlist %}
+<p>list_template starts here.</p>
+<h3>Available Items</h3>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Seller</th>
+    <th>Price</th>
+  </tr>
   {% for item in items %}
-  <p>{{ item }}</p>
+  <tr>
+    <td>{{ item.name }}</td>
+    <td>{{ item.seller }}</td>
+    <td>{{ item.price }}</td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
+<p>End of list_template</p>
 {% endblock %}

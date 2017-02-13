@@ -12,7 +12,8 @@
   <p>Welcome, nameless stranger!</p>
   {% endif %}
   <hr>
-  {% block content %}
+  {% block itemlist %}
+  <p>Paragraph in base.html gets overridden by subtemplate because it's surrounded by block tags.</p>
   {% endblock %}
   <hr>
   <p>End of firstapp_base template.</p>
