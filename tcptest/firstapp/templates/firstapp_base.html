@@ -1,0 +1,20 @@
+
+<!DOCTYPE HTML PUBLIC>
+<html lang="en">
+<head>
+  <title>FirstApp Store</title>
+</head>
+<body>
+  <h1>This is the firstapp_base template</h1>
+  {% if user %}
+  <p>Welcome, {{ user.username }}!</p>
+  {% else %}
+  <p>Welcome, nameless stranger!</p>
+  {% endif %}
+  <hr>
+  {% block content %}
+  {% endblock %}
+  <hr>
+  <p>End of firstapp_base template.</p>
+</body>
+</html >

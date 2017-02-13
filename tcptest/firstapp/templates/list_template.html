@@ -1,0 +1,10 @@
+{% extends "firstapp_base.html" %}
+
+{% block content %}
+<p>Available items:</p>
+<ul>
+  {% for item in items %}
+  <p>{{ item }}</p>
+  {% endfor %}
+</ul>
+{% endblock %}
