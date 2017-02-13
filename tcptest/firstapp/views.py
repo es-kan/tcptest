@@ -14,4 +14,4 @@ class IndexView(View):
         return render(request, template_name, context)
 
     def get_items(self):
-        return Item.objects.all()
+        return Item.objects.all().order_by('seller')

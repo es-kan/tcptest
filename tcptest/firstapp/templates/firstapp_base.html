@@ -3,11 +3,16 @@
 <html lang="en">
 <head>
   <title>FirstApp Store</title>
+  {% block head %}
+  {% endblock %}
 </head>
 <body>
   <h1>This is the firstapp_base template</h1>
   {% if user %}
   <p>Welcome, {{ user.username }}!</p>
+  {% if user.seller %}
+  <p>This user is a seller!</p>
+  {% endif %}
   {% else %}
   <p>Welcome, nameless stranger!</p>
   {% endif %}

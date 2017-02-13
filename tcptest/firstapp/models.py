@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Seller(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    trusted = models.BooleanField(default = False)
 
     def __str__(self):
         return '%s (%s %s)' %(self.user.username, self.user.first_name, self.user.last_name)
