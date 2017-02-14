@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>This is the firstapp_base template</h1>
-  {% if user %}
+  {% if user.is_authenticated %}
   <p>Welcome, {{ user.username }}!</p>
   {% if user.seller %}
   <p>This user is a seller!</p>
